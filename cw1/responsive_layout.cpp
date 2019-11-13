@@ -7,40 +7,119 @@
 #include <iostream>
 
 using namespace std;
+const int MAXWIDTH = 1920;
+const int MINWIDTH = 320;
 
-// you should probably make extensive changes to this function
-void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fit inside r */ ) {
+QGridLayout* grid = new QGridLayout;
 
-    QLayout::setGeometry(r);
+QGridLayout* ReturnGrid(){
+    return grid;
+}
 
-    // for all the Widgets added in ResponsiveWindow.cpp
+void LargeLayout(const QRect *r, QList<QLayoutItem *> list_){
+
+    int xLeft = 0, xRight = r->width(), col = 0, resultFlag = 0, resultCol = 0;
+
     for (int i = 0; i < list_.size(); i++) {
 
         QLayoutItem *o = list_.at(i);
+        ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
 
         try {
             // cast the widget to one of our responsive labels
             ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
 
-            if (label == NULL) // null: cast failed on pointer
+
+            if (label == NULL) {// null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
-            else if (label -> text() == kNavTabs ) // headers go at the top
-                label -> setGeometry(0+r.x(),0+r.y(),r.width(), 40);
-            // only show a search button on small resolution, at the right of the window
-            else if (label -> text() == kSearchButton && r.width() < 500)
-                label -> setGeometry(r.width() - 65+r.x(),45+r.y(),60, 40);
-            // fixme: focus-group did not like this behaviour for the search result element.
-            else if (label -> text() == kSearchResult )
-                label -> setGeometry(rand() %(r.width()-60)+r.x(),rand() %(r.height()-100)+40+r.y(), 60, 60);
-            else // otherwise: disappear label by moving out of bounds
-                label -> setGeometry (-1,-1,0,0);
+            }
+            else if (label->text() == kHomeLink) {
+                label->setGeometry(xLeft, col, r->width() * 0.15, r->height() * 0.1);
+                xLeft = xLeft + r->width() * 0.15;
+            }
+            else if (label->text() == kSearchText){
+                label->setGeometry(xLeft+r->width()*0.1, col*0.08, r->width()*0.5, r->height()*0.07);
+                xLeft = xLeft+r->width()*0.6;
+            }
+            else if (label->text() == kSearchButton){
+                label->setGeometry(xLeft,col*0.08,r->width()*0.1,r->height()*0.07);
+            }
+            else if (label->text() == kShoppingBasket) {
+                label->setGeometry(xRight - r->width() * 0.07, col, r->width() * 0.07, r->height() * 0.1);
+                xRight = xRight - r->width() * 0.07;
+            }
+            else if (label->text() == kSignIn) {
+                label->setGeometry(xRight - r->width() * 0.1, col, r->width() * 0.1, r->height() * 0.1);
+                xRight = 0;
+                col = r->height()*0.1;
+                xLeft = 0;
+            }
+            else if (label->text() == kBackButton) {
+                label->setGeometry(xLeft, col, r->width()*0.075, r->height()*0.07);
+                xLeft = xLeft+r->width()*0.15;
+            }
+            else if (label->text() == kNavTabs){
+                label->setGeometry(xLeft, col, r->width()-xLeft, r->height()*0.07);
+                col = col + r->height()*0.07;
+                xLeft = 0;
+            }
+            else if (label->text() == kSearchOptions){
+                label->setGeometry(xLeft, col, r->width()*0.15, r->height()*0.85-col);
+                xLeft = r->width()*0.1;
+            }
+            else if (label->text() == kSearchResult){
+                if (resultFlag == 0){
+                    resultCol = r->height()*0.19;
+                    resultFlag = 1;
+                }
+                else{
+                    resultCol = resultCol + r->height()*0.2;
+                }
+
+                label->setGeometry(r->width()*0.2, resultCol, r->width()*0.6, r->height()*0.18);
+            }
+            else if (label->text() == kAdvert){
+                label->setGeometry(r->width()-r->width()*0.15,col,r->width()*0.15,r->height()*0.85-col);
+            }
+            else if (label->text() == kSearchBackward){
+                label->setGeometry(r->width()*0.4, r->height()*0.783, r->width()*0.1, r->height()*0.05);
+            }
+            else if (label->text() == kSearchForward){
+                label->setGeometry(r->width()*0.5, r->height()*0.783, r->width()*0.1, r->height()*0.05);
+            }
+            else if (label->text() == kFooter){
+                label->setGeometry(0, r->height()*0.85, r->width(), r->height()*0.15);
+            }
         }
         catch (bad_cast) {
             // bad_case: cast failed on reference...
             cout << "warning, unknown widget class in layout" << endl;
         }
+
     }
 }
+
+
+// you should probably make extensive changes to this function
+void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fit inside r */ ) {
+    // for all the Widgets added in ResponsiveWindow.cpp
+    if (r.width()>r.height()){
+        //landscape
+        if (r.width()>=MAXWIDTH*0.71){
+            //large
+            LargeLayout(&r, list_);
+        }
+        else if (r.width()>=MAXWIDTH*0.70){
+            LargeLayout(&r, list_);
+        }
+    }
+    else{
+        //portrait
+        LargeLayout(&r, list_);
+    }
+
+}
+
 
 // following methods provide a trivial list-based implementation of the QLayout class
 int ResponsiveLayout::count() const {

@@ -6,6 +6,7 @@
 #define RESPONSIVEWINDOW_H
 
 #include <QWidget>
+#include "responsive_layout.h"
 
 using namespace std;
 

@@ -17,7 +17,6 @@ public:
 
     // standard functions for a QLayout
     void setGeometry(const QRect &rect);
-
     void addItem(QLayoutItem *item);
     QSize sizeHint() const;
     QSize minimumSize() const;
@@ -25,7 +24,9 @@ public:
     QLayoutItem *itemAt(int) const;
     QLayoutItem *takeAt(int);
 
+    QGridLayout* ReturnGrid();
+
 private:
-    QList<QLayoutItem*> list_;
+    QList<QLayoutItem *> list_;
 };
 #endif // RESPONSIVELAYOUT_H

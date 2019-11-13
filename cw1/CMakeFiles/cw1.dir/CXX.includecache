@@ -63,6 +63,8 @@ QApplication
 /home/jtarbard/CLionProjects/cw1/responsive_window.h
 QWidget
 -
+responsive_layout.h
+/home/jtarbard/CLionProjects/cw1/responsive_layout.h
 
 /home/jtarbard/CLionProjects/cw1/screenshot.cpp
 screenshot.h
