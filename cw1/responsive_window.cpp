@@ -14,7 +14,7 @@ ResponsiveWindow::ResponsiveWindow() {
     setMinimumSize(320, 320);
 
     //TEMP: for easy testing
-    //setFixedSize(1920*0.7,1080);
+//    setFixedSize(1920*0.66,1020);
 
 
     createWidgets();
@@ -34,9 +34,9 @@ void ResponsiveWindow::createWidgets() {
     rl->addWidget(new ResponsiveLabel(kSearchText));
     rl->addWidget(new ResponsiveLabel(kSearchButton));
     rl->addWidget(new ResponsiveLabel(kSearchResult));
-    rl->addWidget(new ResponsiveLabel(kSearchResult));
-    rl->addWidget(new ResponsiveLabel(kSearchResult));
     rl->addWidget(new ResponsiveLabel(kAdvert));
+    rl->addWidget(new ResponsiveLabel(kSearchResult));
+    rl->addWidget(new ResponsiveLabel(kSearchResult));
     rl->addWidget(new ResponsiveLabel(kSearchForward));
     rl->addWidget(new ResponsiveLabel(kSearchBackward));
     rl->addWidget(new ResponsiveLabel(kFooter));

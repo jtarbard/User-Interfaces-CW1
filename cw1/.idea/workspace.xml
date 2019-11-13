@@ -13,19 +13,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63be0a3a-c137-49ee-aa27-6f6d45b59cbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/responsive_layout.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/responsive_layout.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/responsive_window.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/responsive_window.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/screenshot.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1.dir/screenshot.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1_autogen.dir/ParseCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cw1_autogen.dir/ParseCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cw1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cw1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1024x1366.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1200x1050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1366x1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1920x1050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1920x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered1920x800.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered300x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered320x568.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered375x812.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered500x1050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered568x320.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered700x1050.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/images/rendered812x375.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/responsive_layout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_layout.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responsive_layout.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_layout.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/responsive_window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responsive_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generate_jtarbard.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../generate_jtarbard.zip" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +96,7 @@
       <updated>1573314055972</updated>
       <workItem from="1573314057320" duration="4377000" />
       <workItem from="1573392697307" duration="19006000" />
-      <workItem from="1573657279569" duration="12247000" />
+      <workItem from="1573657279569" duration="19738000" />
     </task>
     <servers />
   </component>
