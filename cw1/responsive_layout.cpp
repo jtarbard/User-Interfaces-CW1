@@ -8,6 +8,8 @@
 
 using namespace std;
 
+//TODO: Create a landscape function
+
 void SmallLayout(const QRect *r, QList<QLayoutItem *> list_) {
 
     int resultFlag = 0, resultCol = 0;
@@ -99,6 +101,7 @@ void MediumLayout(const QRect *r, QList<QLayoutItem *> list_) {
             else if (label->text() == kHomeLink) {
                 label->setGeometry(0, 0, r->width() * 0.2, r->height() * 0.1);
             }
+            //TODO: set min size for width of shopping basket and sign in so they're at a minimum square
             else if (label->text() == kShoppingBasket) {
                 label->setGeometry( r->width()*0.9, 0, r->width()*0.1, r->height() * 0.1);
             }
