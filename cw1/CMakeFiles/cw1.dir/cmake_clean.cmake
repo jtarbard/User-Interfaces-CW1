@@ -1,13 +1,14 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cw1_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/cw1_autogen.dir/ParseCache.txt"
   "cw1_autogen"
-  "CMakeFiles/cw1_autogen.dir/AutogenOldSettings.cmake"
-  "CMakeFiles/cw1.dir/responsive_layout.cpp.o"
+  "CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/cw1.dir/responsive_label.cpp.o"
+  "CMakeFiles/cw1.dir/responsive_layout.cpp.o"
   "CMakeFiles/cw1.dir/responsive_window.cpp.o"
   "CMakeFiles/cw1.dir/screenshot.cpp.o"
-  "CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
-  "cw1.pdb"
   "cw1"
+  "cw1.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

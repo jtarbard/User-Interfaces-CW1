@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jtarbard/CLionProjects/cw1/cw1_autogen/mocs_compilation.cpp" "/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
-  "/home/jtarbard/CLionProjects/cw1/responsive_label.cpp" "/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir/responsive_label.cpp.o"
-  "/home/jtarbard/CLionProjects/cw1/responsive_layout.cpp" "/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir/responsive_layout.cpp.o"
-  "/home/jtarbard/CLionProjects/cw1/responsive_window.cpp" "/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir/responsive_window.cpp.o"
-  "/home/jtarbard/CLionProjects/cw1/screenshot.cpp" "/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir/screenshot.cpp.o"
+  "/home/sc18jt/CLionProjects/comp2811/cw1/cw1_autogen/mocs_compilation.cpp" "/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
+  "/home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.cpp" "/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir/responsive_label.cpp.o"
+  "/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp" "/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir/responsive_layout.cpp.o"
+  "/home/sc18jt/CLionProjects/comp2811/cw1/responsive_window.cpp" "/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir/responsive_window.cpp.o"
+  "/home/sc18jt/CLionProjects/comp2811/cw1/screenshot.cpp" "/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir/screenshot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

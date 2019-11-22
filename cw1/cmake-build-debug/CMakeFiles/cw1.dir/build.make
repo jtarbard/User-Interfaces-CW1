@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.2.5/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.2.5/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jtarbard/CLionProjects/cw1
+CMAKE_SOURCE_DIR = /home/sc18jt/CLionProjects/comp2811/cw1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jtarbard/CLionProjects/cw1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cw1.dir/depend.make
@@ -59,68 +59,68 @@ include CMakeFiles/cw1.dir/flags.make
 
 CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o: CMakeFiles/cw1.dir/flags.make
 CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o: cw1_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o -c /home/jtarbard/CLionProjects/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.o -c /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp
 
 CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jtarbard/CLionProjects/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp > CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp > CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jtarbard/CLionProjects/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp -o CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp -o CMakeFiles/cw1.dir/cw1_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/cw1.dir/responsive_layout.cpp.o: CMakeFiles/cw1.dir/flags.make
 CMakeFiles/cw1.dir/responsive_layout.cpp.o: ../responsive_layout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cw1.dir/responsive_layout.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_layout.cpp.o -c /home/jtarbard/CLionProjects/cw1/responsive_layout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cw1.dir/responsive_layout.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_layout.cpp.o -c /home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp
 
 CMakeFiles/cw1.dir/responsive_layout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw1.dir/responsive_layout.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jtarbard/CLionProjects/cw1/responsive_layout.cpp > CMakeFiles/cw1.dir/responsive_layout.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp > CMakeFiles/cw1.dir/responsive_layout.cpp.i
 
 CMakeFiles/cw1.dir/responsive_layout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw1.dir/responsive_layout.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jtarbard/CLionProjects/cw1/responsive_layout.cpp -o CMakeFiles/cw1.dir/responsive_layout.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp -o CMakeFiles/cw1.dir/responsive_layout.cpp.s
 
 CMakeFiles/cw1.dir/responsive_label.cpp.o: CMakeFiles/cw1.dir/flags.make
 CMakeFiles/cw1.dir/responsive_label.cpp.o: ../responsive_label.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cw1.dir/responsive_label.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_label.cpp.o -c /home/jtarbard/CLionProjects/cw1/responsive_label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cw1.dir/responsive_label.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_label.cpp.o -c /home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.cpp
 
 CMakeFiles/cw1.dir/responsive_label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw1.dir/responsive_label.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jtarbard/CLionProjects/cw1/responsive_label.cpp > CMakeFiles/cw1.dir/responsive_label.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.cpp > CMakeFiles/cw1.dir/responsive_label.cpp.i
 
 CMakeFiles/cw1.dir/responsive_label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw1.dir/responsive_label.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jtarbard/CLionProjects/cw1/responsive_label.cpp -o CMakeFiles/cw1.dir/responsive_label.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.cpp -o CMakeFiles/cw1.dir/responsive_label.cpp.s
 
 CMakeFiles/cw1.dir/responsive_window.cpp.o: CMakeFiles/cw1.dir/flags.make
 CMakeFiles/cw1.dir/responsive_window.cpp.o: ../responsive_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cw1.dir/responsive_window.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_window.cpp.o -c /home/jtarbard/CLionProjects/cw1/responsive_window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cw1.dir/responsive_window.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/responsive_window.cpp.o -c /home/sc18jt/CLionProjects/comp2811/cw1/responsive_window.cpp
 
 CMakeFiles/cw1.dir/responsive_window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw1.dir/responsive_window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jtarbard/CLionProjects/cw1/responsive_window.cpp > CMakeFiles/cw1.dir/responsive_window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sc18jt/CLionProjects/comp2811/cw1/responsive_window.cpp > CMakeFiles/cw1.dir/responsive_window.cpp.i
 
 CMakeFiles/cw1.dir/responsive_window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw1.dir/responsive_window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jtarbard/CLionProjects/cw1/responsive_window.cpp -o CMakeFiles/cw1.dir/responsive_window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sc18jt/CLionProjects/comp2811/cw1/responsive_window.cpp -o CMakeFiles/cw1.dir/responsive_window.cpp.s
 
 CMakeFiles/cw1.dir/screenshot.cpp.o: CMakeFiles/cw1.dir/flags.make
 CMakeFiles/cw1.dir/screenshot.cpp.o: ../screenshot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cw1.dir/screenshot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/screenshot.cpp.o -c /home/jtarbard/CLionProjects/cw1/screenshot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cw1.dir/screenshot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cw1.dir/screenshot.cpp.o -c /home/sc18jt/CLionProjects/comp2811/cw1/screenshot.cpp
 
 CMakeFiles/cw1.dir/screenshot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cw1.dir/screenshot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jtarbard/CLionProjects/cw1/screenshot.cpp > CMakeFiles/cw1.dir/screenshot.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sc18jt/CLionProjects/comp2811/cw1/screenshot.cpp > CMakeFiles/cw1.dir/screenshot.cpp.i
 
 CMakeFiles/cw1.dir/screenshot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cw1.dir/screenshot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jtarbard/CLionProjects/cw1/screenshot.cpp -o CMakeFiles/cw1.dir/screenshot.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sc18jt/CLionProjects/comp2811/cw1/screenshot.cpp -o CMakeFiles/cw1.dir/screenshot.cpp.s
 
 # Object files for target cw1
 cw1_OBJECTS = \
@@ -139,11 +139,11 @@ cw1: CMakeFiles/cw1.dir/responsive_label.cpp.o
 cw1: CMakeFiles/cw1.dir/responsive_window.cpp.o
 cw1: CMakeFiles/cw1.dir/screenshot.cpp.o
 cw1: CMakeFiles/cw1.dir/build.make
-cw1: /usr/lib64/libQt5Widgets.so.5.11.1
-cw1: /usr/lib64/libQt5Gui.so.5.11.1
-cw1: /usr/lib64/libQt5Core.so.5.11.1
+cw1: /usr/lib64/libQt5Widgets.so.5.9.7
+cw1: /usr/lib64/libQt5Gui.so.5.9.7
+cw1: /usr/lib64/libQt5Core.so.5.9.7
 cw1: CMakeFiles/cw1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cw1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cw1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cw1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +156,6 @@ CMakeFiles/cw1.dir/clean:
 .PHONY : CMakeFiles/cw1.dir/clean
 
 CMakeFiles/cw1.dir/depend:
-	cd /home/jtarbard/CLionProjects/cw1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jtarbard/CLionProjects/cw1 /home/jtarbard/CLionProjects/cw1 /home/jtarbard/CLionProjects/cw1/cmake-build-debug /home/jtarbard/CLionProjects/cw1/cmake-build-debug /home/jtarbard/CLionProjects/cw1/cmake-build-debug/CMakeFiles/cw1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sc18jt/CLionProjects/comp2811/cw1 /home/sc18jt/CLionProjects/comp2811/cw1 /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug /home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/CMakeFiles/cw1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cw1.dir/depend
 

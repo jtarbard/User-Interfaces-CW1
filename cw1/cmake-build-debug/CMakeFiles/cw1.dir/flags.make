@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -fPIC -std=gnu++11
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/jtarbard/CLionProjects/cw1/cmake-build-debug/cw1_autogen/include -I/home/jtarbard/CLionProjects/cw1/cmake-build-debug -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/./mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug/cw1_autogen/include -I/home/sc18jt/CLionProjects/comp2811/cw1/cmake-build-debug -isystem /usr/include/qt5 -isystem /usr/include/qt5/QtWidgets -isystem /usr/include/qt5/QtGui -isystem /usr/include/qt5/QtCore -isystem /usr/lib64/qt5/./mkspecs/linux-g++ 
 

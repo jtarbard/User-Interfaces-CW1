@@ -8,10 +8,11 @@
 
 using namespace std;
 
-//TODO: Create a landscape function
-
 void SmallLayout(const QRect *r, QList<QLayoutItem *> list_) {
-
+    /*
+     * Small Layout - Handles label placement for
+     * small screens < (0.45 * 1920px).
+     */
     int resultFlag = 0, resultCol = 0;
 
     for (int i = 0; i < list_.size(); i++) {
@@ -23,55 +24,55 @@ void SmallLayout(const QRect *r, QList<QLayoutItem *> list_) {
             // cast the widget to one of our responsive labels
             ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
 
-            if (label == NULL) {// null: cast failed on pointer
+            if (label == NULL) { // null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
             }
-            else if (label->text() == kHomeLink) {
+            else if (label->text() == kHomeLink)  { //home button
                 label->setGeometry(0, 0, r->width() * 0.25, r->height() * 0.1);
             }
-            else if (label->text() == kShoppingBasket) {
+            else if (label->text() == kShoppingBasket) { //shopping basket
                 label->setGeometry( r->width()*0.8, 0, r->width()*0.2, r->height() * 0.1);
             }
-            else if (label->text() == kSignIn) {
+            else if (label->text() == kSignIn) { //sign in button
                 label->setGeometry(r->width()*0.6, 0, r->width()*0.2, r->height() * 0.1);
             }
-            else if (label->text() == kBackButton) {
+            else if (label->text() == kBackButton) { //hidden: navigation back button
                 label->setGeometry(-1,-1,0,0);
             }
-            else if (label->text() == kNavTabs){
+            else if (label->text() == kNavTabs){ //hidden: navigation tree
                 label->setGeometry(-1,-1,0,0);
             }
-            else if (label->text() == kSearchText){
+            else if (label->text() == kSearchText){ //search bar
                 label->setGeometry(r->width() * 0.05, r->height()*0.115, r->width()*0.75, r->height()*0.1);
             }
-            else if (label->text() == kSearchButton){
+            else if (label->text() == kSearchButton){ //search button
                 label->setGeometry(r->width()*0.8,r->height()*0.115,r->width()*0.15,r->height()*0.1);
             }
-            else if (label->text() == kSearchOptions){
+            else if (label->text() == kSearchOptions){ //hidden: search options
                 label->setGeometry(-1,-1,0,0);
             }
-            else if (label->text() == kSearchResult || label->text() == kAdvert){
+            else if (label->text() == kSearchResult || label->text() == kAdvert){ //search results and adverts
                 if (resultFlag == 0){
                     resultCol = r->height()*0.23;
                     resultFlag = 1;
                 }
-                else{
+                else{ //non-first, iterable item
                     resultCol = resultCol + r->height()*0.165;
                 }
-                if(resultCol + r->height()*0.21 < r->height()) {
+                if(resultCol + r->height()*0.21 < r->height()) { //if item fits on page place
                     label->setGeometry(r->width() * 0.05, resultCol, r->width() * 0.90, r->height() * 0.15);
                 }
-                else{
+                else{ //item does not fit place off of page
                     label->setGeometry(-1,-1,0,0);
                 }
             }
-            else if (label->text() == kSearchBackward){
+            else if (label->text() == kSearchBackward){ //search page backward button
                 label->setGeometry(r->width()*0.05, r->height()*0.9, r->width()*0.4, r->height()*0.07);
             }
-            else if (label->text() == kSearchForward){
+            else if (label->text() == kSearchForward){ //search page forward button
                 label->setGeometry(r->width()*0.55, r->height()*0.9, r->width()*0.4, r->height()*0.07);
             }
-            else if (label->text() == kFooter){
+            else if (label->text() == kFooter){ //hidden: footer
                 label->setGeometry(-1, -1, 0, 0);
             }
         }
@@ -83,82 +84,9 @@ void SmallLayout(const QRect *r, QList<QLayoutItem *> list_) {
 }
 
 void MediumLayout(const QRect *r, QList<QLayoutItem *> list_) {
-
-    int resultFlag = 0, resultCol = 0;
-
-    for (int i = 0; i < list_.size(); i++) {
-
-        QLayoutItem *o = list_.at(i);
-        ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
-
-        try {
-            // cast the widget to one of our responsive labels
-            ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
-
-            if (label == NULL) {// null: cast failed on pointer
-                cout << "warning, unknown widget class in layout" << endl;
-            }
-            else if (label->text() == kHomeLink) {
-                label->setGeometry(0, 0, r->width() * 0.2, r->height() * 0.1);
-            }
-            //TODO: set min size for width of shopping basket and sign in so they're at a minimum square
-            else if (label->text() == kShoppingBasket) {
-                label->setGeometry( r->width()*0.9, 0, r->width()*0.1, r->height() * 0.1);
-            }
-            else if (label->text() == kSignIn) {
-                label->setGeometry(r->width()*0.8, 0, r->width()*0.1, r->height() * 0.1);
-            }
-            else if (label->text() == kBackButton) {
-                label->setGeometry(0, r->height()*0.1, r->width()*0.2, r->height()*0.1);
-            }
-            else if (label->text() == kNavTabs){
-                label->setGeometry(r->width()*0.2, r->height()*0.1, r->width()*0.85, r->height()*0.1);
-            }
-            else if (label->text() == kSearchText){
-                label->setGeometry(r->width() * 0.25, r->height()*0.215, r->width()*0.55, r->height()*0.07);
-            }
-            else if (label->text() == kSearchButton){
-                label->setGeometry(r->width()*0.8,r->height()*0.215,r->width()*0.15,r->height()*0.07);
-            }
-            else if (label->text() == kSearchOptions){
-                label->setGeometry(0, r->height()*0.2, r->width()*0.2, r->height()*0.8);
-            }
-            else if (label->text() == kSearchResult || label->text() == kAdvert){
-                if (resultFlag == 0){
-                    resultCol = r->height()*0.3;
-                    resultFlag = 1;
-                }
-                else{
-                    resultCol = resultCol + r->height()*0.2;
-                }
-                if(resultCol + r->height()*0.25 < r->height()) {
-                    label->setGeometry(r->width() * 0.25, resultCol, r->width() * 0.70, r->height() * 0.18);
-                }
-                else{
-                    label->setGeometry(-1,-1,0,0);
-                }
-            }
-            else if (label->text() == kSearchBackward){
-                label->setGeometry(r->width()*0.5, r->height()*0.9, r->width()*0.1, r->height()*0.08);
-            }
-            else if (label->text() == kSearchForward){
-                label->setGeometry(r->width()*0.6, r->height()*0.9, r->width()*0.1, r->height()*0.08);
-            }
-            else if (label->text() == kFooter){
-                label->setGeometry(-1, -1, 0, 0);
-            }
-        }
-        catch (bad_cast) {
-            // bad_case: cast failed on reference...
-            cout << "warning, unknown widget class in layout" << endl;
-        }
-    }
-}
-
-void LargeLayout(const QRect *r, QList<QLayoutItem *> list_){
     /*
-     * Large Layout - 2/3 of 1920 and above.
-     * Function that TODO finish description
+     * Medium Layout - Handles label placement for
+     * medium screens >= (0.45 * 1920px).
      */
     int resultFlag = 0, resultCol = 0;
 
@@ -174,51 +102,130 @@ void LargeLayout(const QRect *r, QList<QLayoutItem *> list_){
             if (label == NULL) {// null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
             }
-            else if (label->text() == kHomeLink) {
+            else if (label->text() == kHomeLink) { //home button
+                label->setGeometry(0, 0, r->width() * 0.2, r->height() * 0.1);
+            }
+            else if (label->text() == kShoppingBasket) { //shopping basket button
+                label->setGeometry( r->width()*0.9, 0, r->width()*0.1, r->height() * 0.1);
+            }
+            else if (label->text() == kSignIn) { //sign in button
+                label->setGeometry(r->width()*0.8, 0, r->width()*0.1, r->height() * 0.1);
+            }
+            else if (label->text() == kBackButton) { //back button
+                label->setGeometry(0, r->height()*0.1, r->width()*0.2, r->height()*0.1);
+            }
+            else if (label->text() == kNavTabs){ //navigation tree
+                label->setGeometry(r->width()*0.2, r->height()*0.1, r->width()*0.85, r->height()*0.1);
+            }
+            else if (label->text() == kSearchText){ //search bar
+                label->setGeometry(r->width() * 0.25, r->height()*0.215, r->width()*0.55, r->height()*0.07);
+            }
+            else if (label->text() == kSearchButton){ //search button
+                label->setGeometry(r->width()*0.8,r->height()*0.215,r->width()*0.15,r->height()*0.07);
+            }
+            else if (label->text() == kSearchOptions){ //search options
+                label->setGeometry(0, r->height()*0.2, r->width()*0.2, r->height()*0.8);
+            }
+            else if (label->text() == kSearchResult || label->text() == kAdvert){ //search results and adverts
+                if (resultFlag == 0){ //if first item
+                    resultCol = r->height()*0.3;
+                    resultFlag = 1;
+                }
+                else{ //non-first, iterable item
+                    resultCol = resultCol + r->height()*0.2;
+                }
+                if(resultCol + r->height()*0.25 < r->height()) { //if item fits on page place
+                    label->setGeometry(r->width() * 0.25, resultCol, r->width() * 0.70, r->height() * 0.18);
+                }
+                else{ //item does not fit place off of page
+                    label->setGeometry(-1,-1,0,0);
+                }
+            }
+            else if (label->text() == kSearchBackward){ //search page backward button
+                label->setGeometry(r->width()*0.5, r->height()*0.9, r->width()*0.1, r->height()*0.08);
+            }
+            else if (label->text() == kSearchForward){ //search page forward button
+                label->setGeometry(r->width()*0.6, r->height()*0.9, r->width()*0.1, r->height()*0.08);
+            }
+            else if (label->text() == kFooter){ //hidden: footer
+                label->setGeometry(-1, -1, 0, 0);
+            }
+        }
+        catch (bad_cast) {
+            // bad_case: cast failed on reference...
+            cout << "warning, unknown widget class in layout" << endl;
+        }
+    }
+}
+
+void LargeLayout(const QRect *r, QList<QLayoutItem *> list_){
+    /*
+     * Large Layout - Handles label placement for
+     * large screens >= (0.75 * 1920px).
+     */
+    int resultFlag = 0, resultCol = 0;
+
+    for (int i = 0; i < list_.size(); i++) {
+
+        QLayoutItem *o = list_.at(i);
+        ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
+
+        try {
+            // cast the widget to one of our responsive labels
+            ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
+
+            if (label == NULL) {// null: cast failed on pointer
+                cout << "warning, unknown widget class in layout" << endl;
+            }
+            else if (label->text() == kHomeLink) { //home button
                 label->setGeometry(0, 0, r->width() * 0.15, r->height() * 0.1);
             }
-            else if (label->text() == kSearchText){
+            else if (label->text() == kSearchText){ //search bar
                 label->setGeometry(r->width() * 0.2, r->height()*0.015, r->width()*0.5, r->height()*0.07);
             }
-            else if (label->text() == kSearchButton){
+            else if (label->text() == kSearchButton){ //search button
                 label->setGeometry(r->width()*0.7,r->height()*0.015,r->width()*0.1,r->height()*0.07);
             }
-            else if (label->text() == kShoppingBasket) {
+            else if (label->text() == kShoppingBasket) { //shopping basket
                 label->setGeometry( r->width()*0.925, 0, r->width()*0.075, r->height() * 0.1);
             }
-            else if (label->text() == kSignIn) {
+            else if (label->text() == kSignIn) { //sign in button
                 label->setGeometry(r->width()*0.85, 0, r->width()*0.075, r->height() * 0.1);
             }
-            else if (label->text() == kBackButton) {
+            else if (label->text() == kBackButton) { //navigation back button
                 label->setGeometry(0, r->height()*0.1, r->width()*0.075, r->height()*0.07);
             }
-            else if (label->text() == kNavTabs){
+            else if (label->text() == kNavTabs){ //navigation tree
                 label->setGeometry(r->width()*0.15, r->height()*0.1, r->width()*0.85, r->height()*0.07);
             }
-            else if (label->text() == kSearchOptions){
+            else if (label->text() == kSearchOptions){ //search options
                 label->setGeometry(0, r->height()*0.17, r->width()*0.15, r->height()*0.68);
             }
-            else if (label->text() == kSearchResult){
-                if (resultFlag == 0){
+            else if (label->text() == kSearchResult){ //search results
+                if (resultFlag == 0){ //if first result
                     resultCol = r->height()*0.19;
                     resultFlag = 1;
                 }
-                else{
+                else{ //non-first, iterable result
                     resultCol = resultCol + r->height()*0.2;
                 }
-
-                label->setGeometry(r->width()*0.2, resultCol, r->width()*0.6, r->height()*0.18);
+                if(resultCol + r->height()*0.20 < r->height()) { //if item fits on page place
+                    label->setGeometry(r->width() * 0.20, resultCol, r->width() * 0.6, r->height() * 0.18);
+                }
+                else{ //item does not fit place off of page
+                    label->setGeometry(-1,-1,0,0);
+                }
             }
-            else if (label->text() == kAdvert){
+            else if (label->text() == kAdvert){  //advert
                 label->setGeometry(r->width()*0.85,r->height()*0.17,r->width()*0.15,r->height()*0.68);
             }
-            else if (label->text() == kSearchBackward){
+            else if (label->text() == kSearchBackward){ //search page backward button
                 label->setGeometry(r->width()*0.4, r->height()*0.783, r->width()*0.1, r->height()*0.05);
             }
-            else if (label->text() == kSearchForward){
+            else if (label->text() == kSearchForward){ //search page forward button
                 label->setGeometry(r->width()*0.5, r->height()*0.783, r->width()*0.1, r->height()*0.05);
             }
-            else if (label->text() == kFooter){
+            else if (label->text() == kFooter){ //footer
                 label->setGeometry(0, r->height()*0.85, r->width(), r->height()*0.15);
             }
         }
@@ -232,13 +239,15 @@ void LargeLayout(const QRect *r, QList<QLayoutItem *> list_){
 // you should probably make extensive changes to this function
 void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fit inside r */ ) {
     // for all the Widgets added in ResponsiveWindow.cpp
-    //TODO check for landscape or portrait
-    if (r.width()>=1920*0.75){ //Large
+    //Large layout
+    if (r.width()>=1920*0.75){
         LargeLayout(&r, list_);
     }
-    else if (r.width()>=1920*0.45){ //Medium
+    //Medium layout
+    else if (r.width()>=1920*0.45){
         MediumLayout(&r, list_);
     }
+    //Small layout
     else{
         SmallLayout(&r, list_);
     }

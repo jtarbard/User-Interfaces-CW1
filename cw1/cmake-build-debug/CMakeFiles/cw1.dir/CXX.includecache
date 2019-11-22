@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.h
 QLabel
 -
 QString
@@ -14,15 +14,15 @@ QString
 map
 -
 
-/home/jtarbard/CLionProjects/cw1/responsive_layout.cpp
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp
 responsive_layout.h
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.h
 responsive_label.h
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.h
 iostream
 -
 
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.h
 QtGui
 -
 QList
@@ -285,8 +285,6 @@ qpropertyanimation.h
 /usr/include/qt5/QtCore/qpropertyanimation.h
 qqueue.h
 /usr/include/qt5/QtCore/qqueue.h
-qrandom.h
-/usr/include/qt5/QtCore/qrandom.h
 qreadwritelock.h
 /usr/include/qt5/QtCore/qreadwritelock.h
 qrect.h
@@ -345,20 +343,14 @@ qstorageinfo.h
 /usr/include/qt5/QtCore/qstorageinfo.h
 qstring.h
 /usr/include/qt5/QtCore/qstring.h
-qstringalgorithms.h
-/usr/include/qt5/QtCore/qstringalgorithms.h
 qstringbuilder.h
 /usr/include/qt5/QtCore/qstringbuilder.h
 qstringlist.h
 /usr/include/qt5/QtCore/qstringlist.h
 qstringlistmodel.h
 /usr/include/qt5/QtCore/qstringlistmodel.h
-qstringliteral.h
-/usr/include/qt5/QtCore/qstringliteral.h
 qstringmatcher.h
 /usr/include/qt5/QtCore/qstringmatcher.h
-qstringview.h
-/usr/include/qt5/QtCore/qstringview.h
 qsysinfo.h
 /usr/include/qt5/QtCore/qsysinfo.h
 qsystemdetection.h
@@ -550,6 +542,8 @@ stdarg.h
 string
 -
 iterator
+-
+QtCore/qstring.h
 -
 
 /usr/include/qt5/QtCore/qbytearraylist.h
@@ -761,6 +755,8 @@ QtCore/qcoreevent.h
 -
 
 /usr/include/qt5/QtCore/qexception.h
+QtCore/qglobal.h
+-
 QtCore/qatomic.h
 -
 QtCore/qshareddata.h
@@ -859,8 +855,6 @@ cstddef
 -
 utility
 -
-assert.h
--
 stddef.h
 -
 QtCore/qconfig-bootstrapped.h
@@ -919,7 +913,7 @@ algorithm
 -
 
 /usr/include/qt5/QtCore/qhashfunctions.h
-QtCore/qstring.h
+QtCore/qchar.h
 -
 QtCore/qpair.h
 -
@@ -1159,8 +1153,6 @@ QtCore/qstringlist.h
 /usr/include/qt5/QtCore/qmimetype.h
 QtCore/qglobal.h
 -
-QtCore/qobjectdefs.h
--
 QtCore/qshareddata.h
 -
 QtCore/qstring.h
@@ -1286,14 +1278,6 @@ QtCore/qvariantanimation.h
 QtCore/qlist.h
 -
 
-/usr/include/qt5/QtCore/qrandom.h
-QtCore/qglobal.h
--
-algorithm
--
-random
--
-
 /usr/include/qt5/QtCore/qreadwritelock.h
 QtCore/qglobal.h
 -
@@ -1341,6 +1325,8 @@ QtCore/qscopedpointer.h
 -
 
 /usr/include/qt5/QtCore/qresultstore.h
+QtCore/qglobal.h
+-
 QtCore/qmap.h
 -
 QtCore/qdebug.h
@@ -1511,12 +1497,6 @@ QtCore/qrefcount.h
 -
 QtCore/qnamespace.h
 -
-QtCore/qstringliteral.h
--
-QtCore/qstringalgorithms.h
--
-QtCore/qstringview.h
--
 string
 -
 iterator
@@ -1524,10 +1504,6 @@ iterator
 stdarg.h
 -
 QtCore/qstringbuilder.h
--
-
-/usr/include/qt5/QtCore/qstringalgorithms.h
-QtCore/qnamespace.h
 -
 
 /usr/include/qt5/QtCore/qstringbuilder.h
@@ -1556,24 +1532,8 @@ QtCore/qabstractitemmodel.h
 QtCore/qstringlist.h
 -
 
-/usr/include/qt5/QtCore/qstringliteral.h
-QtCore/qarraydata.h
--
-
 /usr/include/qt5/QtCore/qstringmatcher.h
 QtCore/qstring.h
--
-
-/usr/include/qt5/QtCore/qstringview.h
-QtCore/qchar.h
--
-QtCore/qbytearray.h
--
-QtCore/qstringliteral.h
--
-QtCore/qstringalgorithms.h
--
-string
 -
 
 /usr/include/qt5/QtCore/qsysinfo.h
@@ -1607,7 +1567,7 @@ windows.h
 /usr/include/qt5/QtCore/qtemporarydir.h
 QtCore/qdir.h
 -
-QtCore/qscopedpointer.h
+QtCore/QScopedPointer
 -
 
 /usr/include/qt5/QtCore/qtemporaryfile.h
@@ -1644,10 +1604,6 @@ stdio.h
 
 /usr/include/qt5/QtCore/qthread.h
 QtCore/qobject.h
--
-future
--
-functional
 -
 limits.h
 -
@@ -1752,8 +1708,6 @@ QtCore/qstringlist.h
 QtCore/qobject.h
 -
 QtCore/qbytearraylist.h
--
-variant
 -
 
 /usr/include/qt5/QtCore/qvariantanimation.h
@@ -2529,8 +2483,6 @@ OpenGLES/ES2/gl.h
 -
 OpenGLES/ES2/glext.h
 -
-GLES3/gl32.h
--
 GLES3/gl31.h
 -
 GLES3/gl3.h
@@ -2556,6 +2508,10 @@ stddef.h
 inttypes.h
 -
 inttypes.h
+-
+inttypes.h
+-
+stdint.h
 -
 stdint.h
 -
@@ -2622,6 +2578,10 @@ stddef.h
 inttypes.h
 -
 inttypes.h
+-
+inttypes.h
+-
+stdint.h
 -
 stdint.h
 -

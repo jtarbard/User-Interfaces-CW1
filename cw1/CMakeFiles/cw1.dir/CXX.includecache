@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/jtarbard/CLionProjects/cw1/cw1_autogen/EWIEGA46WW/moc_screenshot.cpp
-../../screenshot.h
-/home/jtarbard/CLionProjects/cw1/screenshot.h
+/home/sc18jt/CLionProjects/comp2811/cw1/cw1_autogen/EWIEGA46WW/moc_screenshot.cpp
+screenshot.h
+/home/sc18jt/CLionProjects/comp2811/cw1/cw1_autogen/EWIEGA46WW/screenshot.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/jtarbard/CLionProjects/cw1/cw1_autogen/mocs_compilation.cpp
+/home/sc18jt/CLionProjects/comp2811/cw1/cw1_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_screenshot.cpp
-/home/jtarbard/CLionProjects/cw1/cw1_autogen/EWIEGA46WW/moc_screenshot.cpp
+/home/sc18jt/CLionProjects/comp2811/cw1/cw1_autogen/EWIEGA46WW/moc_screenshot.cpp
 
-/home/jtarbard/CLionProjects/cw1/responsive_label.cpp
-QFrame
--
-responsive_label.h
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
-
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.h
 QLabel
 -
 QString
@@ -32,59 +26,21 @@ QString
 map
 -
 
-/home/jtarbard/CLionProjects/cw1/responsive_layout.cpp
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.cpp
 responsive_layout.h
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.h
 responsive_label.h
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_label.h
 iostream
 -
 
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
+/home/sc18jt/CLionProjects/comp2811/cw1/responsive_layout.h
 QtGui
 -
 QList
 -
 QLayout
 -
-
-/home/jtarbard/CLionProjects/cw1/responsive_window.cpp
-responsive_window.h
-/home/jtarbard/CLionProjects/cw1/responsive_window.h
-responsive_layout.h
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
-screenshot.h
-/home/jtarbard/CLionProjects/cw1/screenshot.h
-iostream
--
-QApplication
--
-
-/home/jtarbard/CLionProjects/cw1/responsive_window.h
-QWidget
--
-responsive_layout.h
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
-
-/home/jtarbard/CLionProjects/cw1/screenshot.cpp
-screenshot.h
-/home/jtarbard/CLionProjects/cw1/screenshot.h
-sys/stat.h
--
-fstream
--
-QApplication
--
-
-/home/jtarbard/CLionProjects/cw1/screenshot.h
-QWidget
--
-responsive_layout.h
-/home/jtarbard/CLionProjects/cw1/responsive_layout.h
-responsive_label.h
-/home/jtarbard/CLionProjects/cw1/responsive_label.h
-responsive_window.h
-/home/jtarbard/CLionProjects/cw1/responsive_window.h
 
 /usr/include/qt5/QtCore/QEvent
 qcoreevent.h
@@ -1342,14 +1298,6 @@ QtCore/qvariantanimation.h
 QtCore/qlist.h
 -
 
-/usr/include/qt5/QtCore/qrandom.h
-QtCore/qglobal.h
--
-algorithm
--
-random
--
-
 /usr/include/qt5/QtCore/qreadwritelock.h
 QtCore/qglobal.h
 -
@@ -1582,10 +1530,6 @@ stdarg.h
 QtCore/qstringbuilder.h
 -
 
-/usr/include/qt5/QtCore/qstringalgorithms.h
-QtCore/qnamespace.h
--
-
 /usr/include/qt5/QtCore/qstringbuilder.h
 QtCore/qstring.h
 -
@@ -1612,24 +1556,8 @@ QtCore/qabstractitemmodel.h
 QtCore/qstringlist.h
 -
 
-/usr/include/qt5/QtCore/qstringliteral.h
-QtCore/qarraydata.h
--
-
 /usr/include/qt5/QtCore/qstringmatcher.h
 QtCore/qstring.h
--
-
-/usr/include/qt5/QtCore/qstringview.h
-QtCore/qchar.h
--
-QtCore/qbytearray.h
--
-QtCore/qstringliteral.h
--
-QtCore/qstringalgorithms.h
--
-string
 -
 
 /usr/include/qt5/QtCore/qsysinfo.h
@@ -3372,14 +3300,6 @@ QtGui/qwindowdefs_win.h
 QtGui/qtguiglobal.h
 -
 
-/usr/include/qt5/QtWidgets/QApplication
-qapplication.h
-/usr/include/qt5/QtWidgets/qapplication.h
-
-/usr/include/qt5/QtWidgets/QFrame
-qframe.h
-/usr/include/qt5/QtWidgets/qframe.h
-
 /usr/include/qt5/QtWidgets/QLabel
 qlabel.h
 /usr/include/qt5/QtWidgets/qlabel.h
@@ -3392,24 +3312,6 @@ qlayout.h
 qwidget.h
 /usr/include/qt5/QtWidgets/qwidget.h
 
-/usr/include/qt5/QtWidgets/qapplication.h
-QtWidgets/qtwidgetsglobal.h
--
-QtCore/qcoreapplication.h
--
-QtGui/qwindowdefs.h
--
-QtCore/qpoint.h
--
-QtCore/qsize.h
--
-QtGui/qcursor.h
--
-QtWidgets/qdesktopwidget.h
--
-QtGui/qguiapplication.h
--
-
 /usr/include/qt5/QtWidgets/qboxlayout.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -3418,12 +3320,6 @@ QtWidgets/qlayout.h
 QtWidgets/qwidget.h
 -
 limits.h
--
-
-/usr/include/qt5/QtWidgets/qdesktopwidget.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qwidget.h
 -
 
 /usr/include/qt5/QtWidgets/qframe.h
@@ -3525,4 +3421,36 @@ QtGui/qkeysequence.h
 -
 QtGui/qevent.h
 -
+
+responsive_label.h
+QLabel
+-
+QString
+-
+map
+-
+
+responsive_layout.h
+QtGui
+-
+QList
+-
+QLayout
+-
+
+responsive_window.h
+QWidget
+-
+responsive_layout.h
+responsive_layout.h
+
+screenshot.h
+QWidget
+-
+responsive_layout.h
+responsive_layout.h
+responsive_label.h
+responsive_label.h
+responsive_window.h
+responsive_window.h
 

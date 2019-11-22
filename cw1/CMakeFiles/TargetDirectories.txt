@@ -1,4 +1,4 @@
-/home/jtarbard/CLionProjects/cw1/CMakeFiles/rebuild_cache.dir
-/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1.dir
-/home/jtarbard/CLionProjects/cw1/CMakeFiles/edit_cache.dir
-/home/jtarbard/CLionProjects/cw1/CMakeFiles/cw1_autogen.dir
+/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/rebuild_cache.dir
+/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/edit_cache.dir
+/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1.dir
+/home/sc18jt/CLionProjects/comp2811/cw1/CMakeFiles/cw1_autogen.dir
